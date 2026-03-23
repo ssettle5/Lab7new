@@ -1,4 +1,4 @@
-# Program Name: Lab7new
+# Program Name: lab7.py
 # Course: IT1114/Section 01
 # Student Name: Sophia Settle
 # Assignment Number: Lab7
