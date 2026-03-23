@@ -1,0 +1,29 @@
+# Program Name: Lab7new
+# Course: IT1114/Section 01
+# Student Name: Sophia Settle
+# Assignment Number: Lab7
+# Due Date: 03/22/2026
+# Purpose: This program prompts the user for a range of numbers and prints all the prime numbers within that range, including the starting and ending values.
+
+
+def is_prime(num):
+    # For this assignment, 1 is considered prime
+    if num == 1:
+        return True
+    if num < 2:
+        return False
+    
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+
+# Prompt user for input
+start = int(input("Starting Number: "))
+end = int(input("Ending Number: "))
+
+# Print prime numbers in the range (inclusive)
+for num in range(start, end + 1):
+    if is_prime(num):
+        print(num)
